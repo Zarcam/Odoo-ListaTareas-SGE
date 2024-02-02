@@ -13,7 +13,7 @@ class lista_tareas(models.Model):
     @api.depends('prioridad')
     def _value_urgente(self):
         for record in self:
-            if record.prioridad > 10:
+            if record.prioridad > 30:
                 record.urgente = True
             else:
                 record.urgente = False

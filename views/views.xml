@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <record model="ir.actions.act_window" id="action_lista_tareas">
-            <field name="name">Listado de tareas pendientes</field>
+            <field name="name">Listado de tareas pendientes ARG</field>
             <field name="res_model">lista_tareas.lista</field>
             <field name="view_mode">tree,form</field>
         </record>
