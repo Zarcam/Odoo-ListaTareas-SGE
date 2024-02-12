@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="listatarea.kanban_view" model="ir.ui.view">
+            <field name="name">Lista de tareas formato Kanban - ARG</field>
+            <field name="model">lista_tareas.lista</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="name"/>
+                    <field name="id"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_card oe_kanban_global_click">
+                                <field name="tarea"/>
+                                <field name="prioridad"/>
+                                <field name="urgente"/>
+                                <field name="realizada"/>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+    </data>
+</odoo>
