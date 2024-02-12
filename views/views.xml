@@ -36,8 +36,14 @@
                         <t t-name="kanban-box">
                             <div class="oe_kanban_card oe_kanban_global_click">
                                 <field name="tarea"/>
-                                <field name="prioridad"/>
+                                <br/>
+                                <label for='prioridad'>Prioridad: </label>
+                                <field name="prioridad"/>                                                            
+                                <br/>                                
+                                <label for='urgente'>Urgente</label>                                
                                 <field name="urgente"/>
+                                <br/>                                
+                                <label for='realizada'>Realizada</label>                                
                                 <field name="realizada"/>
                             </div>
                         </t>
