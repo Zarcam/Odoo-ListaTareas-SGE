@@ -9,6 +9,10 @@ class lista_tareas(models.Model):
     prioridad = fields.Integer()
     urgente = fields.Boolean(compute="_value_urgente", store=True)
     realizada = fields.Boolean()
+    fecha_inicio = fields.Date(
+        string='Fecha de inicio',
+        default=fields.Date.context_today,
+    )
 
     @api.depends('prioridad')
     def _value_urgente(self):
